@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1">
+
+    <VBox alignment="CENTER" prefHeight="768" spacing="10" style="-fx-padding: 0 0 0 500">
+        <Text text="LOGIN" style="-fx-font-size: 36; -fx-font-weight: bold;"/>
+        <VBox spacing="4">
+            <Text text="Email" style="-fx-font-size: 14"/>
+            <TextField prefWidth="340" prefHeight="36" style="-fx-font-size: 14" fx:id="emailLogin"/>
+        </VBox>
+        <VBox spacing="4">
+            <Text text="Password" style="-fx-font-size: 14"/>
+            <TextField prefWidth="340" prefHeight="36" style="-fx-font-size: 14" fx:id="passwordLogin"/>
+        </VBox>
+        <HBox spacing="4">
+            <RadioButton fx:id="isAdminLogin"/>
+            <Text text="Admin" />
+        </HBox>
+        <Button text="Sign in" prefWidth="100" prefHeight="28" style="-fx-font-size: 12" fx:id="signInBtn"/>
+    </VBox>
+
+</AnchorPane>

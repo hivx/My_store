@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1">
+
+    <HBox>
+        <VBox spacing="10" style="-fx-background-color: #ccebff" prefHeight="768.0">
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0">
+                <image>
+                    <Image url="@../../assets/Logo.png"/>
+                </image>
+            </ImageView>
+            <VBox spacing="10" style="-fx-padding: 0 0 0 20">
+                <Button text="Dashboard" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+                <Button text="User" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+                <Button text="Media" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+            </VBox>
+        </VBox>
+        <VBox style="-fx-background-color: #fff; -fx-padding: 10" prefWidth="1206">
+            <Pane prefHeight="80.0" prefWidth="562.0">
+                <HBox spacing="100" style="-fx-padding: 0 0 0 300">
+                    <children>
+                        <TextField layoutX="340.0" layoutY="10.0" prefHeight="48.0" prefWidth="528.0">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </TextField>
+                    </children>
+                    <Button text="New user" prefWidth="160" prefHeight="48" style="-fx-font-size: 14" fx:id="newUser"/>
+                </HBox>
+            </Pane>
+            <HBox fx:id="hBoxUser" layoutX="24.0" layoutY="60.0" prefHeight="660.0" prefWidth="1206.0">
+                <children>
+                    <VBox fx:id="hBoxUser1" prefHeight="660.0" prefWidth="380.0" style="-fx-border-color: #33adff;"/>
+                    <VBox fx:id="hBoxUser2" prefHeight="660.0" prefWidth="380.0" style="-fx-border-color: #33adff;"/>
+                    <VBox fx:id="hBoxUser3" prefHeight="660.0" prefWidth="380.0" style="-fx-border-color: #33adff;"/>
+                </children>
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane>

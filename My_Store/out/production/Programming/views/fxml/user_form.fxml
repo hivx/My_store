@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/11.0.1">
+
+    <HBox>
+        <VBox spacing="10" style="-fx-background-color: #ccebff; -fx-padding: 0 0 0 40" prefHeight="768.0">
+            <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" layoutX="594.0" layoutY="289.0">
+                <image>
+                    <Image url="@../../../assets/images/Logo.png"/>
+                </image>
+            </ImageView>
+            <Button text="Dashboard" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+            <Button text="User" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+            <Button text="Media" prefWidth="160" prefHeight="40" style="-fx-font-size: 14"/>
+        </VBox>
+        <VBox style="-fx-background-color: #fff; -fx-padding: 10 0 0 200" prefWidth="1206" alignment="CENTER" spacing="14">
+            <HBox alignment="CENTER_LEFT">
+                <Text text="User name" wrappingWidth="120" style="-fx-font-size: 18"/>
+                <TextField fx:id="userName" style="-fx-font-size: 18" prefWidth="600" prefHeight="40"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Text text="Email" wrappingWidth="120" style="-fx-font-size: 18"/>
+                <TextField fx:id="email" style="-fx-font-size: 18" prefWidth="600" prefHeight="40"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Text text="Address" wrappingWidth="120" style="-fx-font-size: 18"/>
+                <TextField fx:id="address" style="-fx-font-size: 18" prefWidth="600" prefHeight="40"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Text text="Phone" wrappingWidth="120" style="-fx-font-size: 18"/>
+                <TextField fx:id="phone" style="-fx-font-size: 18" prefWidth="600" prefHeight="40"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+                <Text text="Password" wrappingWidth="120" style="-fx-font-size: 18"/>
+                <TextField fx:id="password" style="-fx-font-size: 18" prefWidth="600" prefHeight="40"/>
+            </HBox>
+<!--            <HBox spacing="4" style="-fx-padding: 0 0 0 120">-->
+<!--                <RadioButton fx:id="isAdmin"/>-->
+<!--                <Text text="Admin" />-->
+<!--            </HBox>-->
+            <HBox style="-fx-padding: 0 0 0 220" spacing="10">
+                <Button fx:id="addNewUser" style="-fx-font-size: 18" prefWidth="200" prefHeight="32"/>
+                <Button fx:id="backToUserScreen" text="Cancel" style="-fx-font-size: 18" prefWidth="200" prefHeight="32"/>
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane>
