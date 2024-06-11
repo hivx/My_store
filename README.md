@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-Welcome to the AIMS project. Here is a guideline to help you get started.
+Welcome to the project II. Here is a guideline to help you get started.
 
 ## Folder Structure
 
